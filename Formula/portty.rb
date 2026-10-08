@@ -2,8 +2,7 @@ class Portty < Formula
   desc "Securely share a terminal with a paired phone"
   homepage "https://github.com/mrtechnoo/portty"
   version "0.1.0"
-  # Freeware, closed source — the full license ships in each archive (LICENSE.txt)
-  # and is installed alongside the binaries below.
+  license "Apache-2.0"
 
   on_macos do
     on_arm do

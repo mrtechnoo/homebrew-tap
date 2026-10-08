@@ -1,23 +1,23 @@
 class Portty < Formula
   desc "Securely share a terminal with a paired phone"
   homepage "https://github.com/mrtechnoo/portty"
-  version "0.1.0"
+  version "0.1.3"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/mrtechnoo/portty/releases/download/v0.1.0/portty-v0.1.0-aarch64-apple-darwin.tar.gz"
-      sha256 "e52c2a4a3a907d9dbdfb1354dcd6014ad1789ca37176763a698c511d41cd960b"
+      url "https://github.com/mrtechnoo/portty/releases/download/v0.1.3/portty-v0.1.3-aarch64-apple-darwin.tar.gz"
+      sha256 "0e3caa56f6cdb2f01ad54303eb31a429152dc5863f16632644f778516a645da1"
     end
     on_intel do
-      url "https://github.com/mrtechnoo/portty/releases/download/v0.1.0/portty-v0.1.0-x86_64-apple-darwin.tar.gz"
-      sha256 "e4fbba3f0f24f147721a8a4600304e8055e0327d7890b015295f53335d71d4a8"
+      url "https://github.com/mrtechnoo/portty/releases/download/v0.1.3/portty-v0.1.3-x86_64-apple-darwin.tar.gz"
+      sha256 "05cf4cd48d460eab767cb2dcfe935a11198e6ec89b2dc550cacce3dde7472a84"
     end
   end
 
   def install
     bin.install "portty", "portty-host"
-    prefix.install "LICENSE.txt"
+    prefix.install "LICENSE", "NOTICE", "THIRD-PARTY-NOTICES.txt"
   end
 
   test do

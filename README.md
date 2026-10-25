@@ -9,14 +9,16 @@ terminal with a paired phone.
 brew install mrtechnoo/tap/portty
 ```
 
-That installs the `portty` and `portty-host` commands (macOS, Apple Silicon &
-Intel). To upgrade later:
+That installs the `portty` and `portty-host` commands on macOS (Apple Silicon
+and Intel) and Linux (x86_64). Use the full name the first time: Homebrew only
+loads formulae from a third-party tap once you have named them in full (or run
+`brew trust`). After that the short name works. To upgrade later:
 
 ```sh
 brew update
 brew upgrade portty
 ```
 
-Portty is free to use; the binaries are provided under the license in each
-release archive (`LICENSE.txt`). Source is maintained privately. Release binaries
-and checksums: <https://github.com/mrtechnoo/portty/releases>.
+Portty is open source under the Apache License 2.0. Source:
+<https://github.com/corvuxmindware/portty>. Release binaries and checksums:
+<https://github.com/mrtechnoo/portty/releases>.

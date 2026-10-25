@@ -1,7 +1,8 @@
 class Portty < Formula
   desc "Securely share a terminal with a paired phone"
-  homepage "https://github.com/mrtechnoo/portty"
-  version "0.1.3"
+  homepage "https://github.com/corvuxmindware/portty"
+  url "https://github.com/mrtechnoo/portty/releases/download/v0.1.3/portty-v0.1.3-x86_64-unknown-linux-gnu.tar.gz"
+  sha256 "180f7f2f59ec8114ec2aafa4bf38e9016a4e69cc733d3f8939a99679d0309e61"
   license "Apache-2.0"
 
   on_macos do
@@ -13,6 +14,11 @@ class Portty < Formula
       url "https://github.com/mrtechnoo/portty/releases/download/v0.1.3/portty-v0.1.3-x86_64-apple-darwin.tar.gz"
       sha256 "05cf4cd48d460eab767cb2dcfe935a11198e6ec89b2dc550cacce3dde7472a84"
     end
+  end
+
+  on_linux do
+    # Releases ship a Linux build for x86_64 only.
+    depends_on arch: :x86_64
   end
 
   def install
